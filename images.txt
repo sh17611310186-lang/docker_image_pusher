@@ -8,3 +8,14 @@ xhofe/alist:latest
 n8nio/n8n:latest
 #
 alpine
+
+# Dify 核心服务
+langgenius/dify-web:0.8.0
+langgenius/dify-api:0.8.0
+langgenius/dify-sandbox:0.8.0
+
+# 数据库与中间件（通常无需代理，但若需统一管理可加入）
+redis:7.0-alpine
+postgres:15-alpine
+semitechnologies/weaviate:1.23.10
+qdrant/qdrant:v1.9.0
