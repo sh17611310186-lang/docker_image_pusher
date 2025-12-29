@@ -1,11 +1,16 @@
 nginx
-#支持私库
+
+# 支持私库
 k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
+
+# 文件列表与网盘聚合工具
 xhofe/alist:latest
-#支持指定架构
+# 支持指定架构
 --platform=linux/arm64 xiaoyaliu/alist
+
 # n8n 工作流引擎
 n8nio/n8n:latest
+
 #
 alpine
 
@@ -19,3 +24,66 @@ redis:7.0-alpine
 postgres:15-alpine
 semitechnologies/weaviate:1.23.10
 qdrant/qdrant:v1.9.0
+
+
+# nas
+# --- 文件管理 & 网盘 ---
+xhofe/alist:latest
+filebrowser/filebrowser:latest
+nextcloud:latest
+owncloud:latest
+papermerge/papermerge:latest          # 文档管理/OCR 归档
+librespeed/cli:latest                 # 网速测试（用于 NAS 性能验证）
+
+# --- 媒体服务 ---
+jellyfin/jellyfin:latest
+photoprism/photoprism:latest
+emby/embyserver:latest                # Emby（Jellyfin 分支前的商业版）
+plexinc/pms-docker:latest             # Plex（需硬件转码支持）
+audiobookshelf/audiobookshelf:latest  # 有声书/播客管理
+bazarr/bazarr:latest                  # 自动字幕下载（配合 Jellyfin/Plex）
+tautulli/tautulli:latest              # 媒体服务器使用统计与通知
+
+# --- 下载 & PT 工具 ---
+linuxserver/qbittorrent:latest
+linuxserver/transmission:latest
+linuxserver/deluge:latest
+binhex/arch-rtorrent-flood:latest     # rTorrent + Flood WebUI（轻量高效）
+jlesage/flexget:latest                # 自动化下载任务调度（RSS + 过滤）
+
+# --- 同步 & 备份 ---
+restic/restic:latest                  # 加密备份工具（命令行，常配合脚本）
+rclone/rclone:latest                  # 云存储同步（支持 70+ 服务商）
+duplicati/duplicati:latest            # 图形化加密备份到云（类似 Time Machine）
+kopia/kopia:latest                    # 现代化备份工具（快照、去重、加密）
+stefanprodan/mgob:latest              # MongoDB 备份（若你用 Mongo）
+linuxserver/mariadb-backup:latest     # MySQL/MariaDB 定时备份
+
+# --- 内网穿透 & 远程访问 ---
+tailscale/tailscale:latest
+zyclonite/zerotier:latest
+snowdreamtech/frps:latest
+snowdreamtech/frpc:latest
+cloudflare/cloudflared:latest         # Cloudflare Tunnel（零配置暴露内网服务）
+
+# --- 系统监控 & 运维 ---
+linuxserver/netdata:latest
+prom/node-exporter:latest
+grafana/grafana:latest
+influxdb:latest
+crazymax/diun:latest                  # Docker 镜像更新通知（监控新版本）
+containrrr/watchtower:latest          # 自动更新运行中的容器
+linuxserver/heimdall:latest           # 应用仪表盘（NAS 服务首页入口）
+nicolaka/netshoot:latest              # 网络诊断工具箱
+
+# --- 其他实用工具 ---
+linuxserver/calibre-web:latest        # 电子书管理与在线阅读
+linuxserver/bazarr:latest             # （已列，重复强调）字幕自动化
+linuxserver/sonarr:latest             # TV 剧集自动下载管理
+linuxserver/radarr:latest             # 电影自动下载管理
+linuxserver/readarr:latest            # 书籍/有声书自动下载
+linuxserver/lidarr:latest             # 音乐自动下载管理
+linuxserver/ombi:latest               # 媒体请求门户（用户可提需求）
+linuxserver/guacamole:latest          # 远程桌面网关（访问 Windows 虚拟机等）
+lscr.io/linuxserver/unpackerr:latest  # 自动解压下载完成的压缩包（配合 Sonarr/Radarr）
+lscr.io/linuxserver/sabnzbd:latest    # Usenet 新闻组下载器（高级用户）
