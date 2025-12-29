@@ -46,8 +46,8 @@ owncloud:latest
 # 文档管理/OCR 归档
 papermerge/papermerge:latest
 
-# 网速测试（用于 NAS 性能验证）
-librespeed/librespeed
+# 网速测试（Web 版 Speedtest，用于 NAS 性能验证）
+librespeed/librespeed:latest
 
 
 # --- 媒体服务 ---
@@ -163,9 +163,6 @@ nicolaka/netshoot:latest
 # 电子书管理与在线阅读
 linuxserver/calibre-web:latest
 
-# 字幕自动化（重复强调）
-linuxserver/bazarr:latest
-
 # TV 剧集自动下载管理
 linuxserver/sonarr:latest
 
@@ -189,3 +186,36 @@ lscr.io/linuxserver/unpackerr:latest
 
 # Usenet 新闻组下载器（高级用户）
 lscr.io/linuxserver/sabnzbd:latest
+
+# 高性能多协议下载工具（HTTP/BT/Magnet）
+aria2/aria2:latest
+
+# Aria2 的现代化 Web 前端（美观易用）
+p3terx/ariang:latest
+
+# 自托管 Bitwarden 密码管理服务（轻量安全）
+vaultwarden/server:latest
+
+# 服务健康监控 & 告警（类似 UptimeRobot）
+louislam/uptime-kuma:latest
+
+# 文档转换服务（HTML/Word → PDF，支持 API）
+gotenberg/gotenberg:latest
+
+
+# --- 软路由 & 家庭实验室增强 ---
+
+# 全局广告过滤 + 家长控制（替代路由器基础去广告）
+adguard/adguardhome:latest
+
+# 智能 DNS 转发（解决 DNS 污染，支持国内直连/国外代理）
+txthinking/mosdns:latest
+
+# 动态域名解析（支持阿里云/腾讯云/Cloudflare/DynDNS）
+jeessy/ddns-go:latest
+
+# 网速自动测试与历史记录（生成趋势图表）
+henrywhitaker3/speedtest-tracker:latest
+
+# 智能家居中枢（可选，资源占用中等）
+homeassistant/home-assistant:latest
