@@ -47,7 +47,7 @@ owncloud:latest
 papermerge/papermerge:latest
 
 # 网速测试（用于 NAS 性能验证）
-librespeed/cli:latest
+librespeed/librespeed
 
 
 # --- 媒体服务 ---
