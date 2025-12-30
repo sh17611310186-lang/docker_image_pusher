@@ -223,4 +223,4 @@ homeassistant/home-assistant:latest
 # SYNC_FROM_HERE
 
 # WebDAV 服务（将本地目录暴露为 WebDAV，方便跨平台挂载）
-linuxserver/webdav:latest
+morrisjobke/webdav:latest
