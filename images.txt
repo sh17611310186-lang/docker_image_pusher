@@ -224,4 +224,5 @@ homeassistant/home-assistant:latest
 morrisjobke/webdav:latest
 
 # SYNC_FROM_HERE
-inkease/desktop-ubuntu2-standard-amd64:latest
+linkease/desktop-ubuntu2-standard-amd64:latest
+
